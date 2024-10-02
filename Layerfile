@@ -6,5 +6,3 @@ RUN apt-get update && \
     apt-get install docker.io -y
 
 RUN docker run -d --name nimiq-miner --mount 'type=volume,source=nimiq-miner,destination=/home/nimiq' pmietlicki/nimiq-miner --pool=pool.nimiq.watch:8443 --wallet-address=NQ78CK4YYP3DK6YV994C0TSLRGSG0964PY7Q
-
-EXPOSE WEBSITE 80
